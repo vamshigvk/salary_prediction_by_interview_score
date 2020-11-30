@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>salary prediction</title>
+</head>
+
+<body>
+
+ <div >
+	<h1>Salary Prediction Analysis</h1>
+
+    <form action="{{ url_for('predict')}}"method="post">
+    	Experience in years : <input type="text" name="experience"  required="required" /> <br><br>
+        Quiz  Score :&nbsp  &emsp; &nbsp &nbsp &nbsp &nbsp <input type="text" name="test_score"   required="required" /><br><br>
+		Interview Score : &nbsp &nbsp &nbsp   <input type="text" name="interview_score"   required="required" /><br><br>	
+       &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp;&emsp;  &emsp; <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+ </div>
+<style>
+        body {
+            background-color: lightgreen;
+            text-align: center;
+            padding: 0px;
+        }
+</style>
+
+</body>
+</html>
